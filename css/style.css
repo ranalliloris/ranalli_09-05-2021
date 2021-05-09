@@ -1,4 +1,10 @@
 .text-red
 {
-    color: green;
+    color: red;
+}
+
+.text-center
+{
+    text-align: center;
+
 }
