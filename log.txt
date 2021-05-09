@@ -1,0 +1,225 @@
+commit de619fa537d2471ee34e1e78b4260e5ae7715437
+Merge: 5694486 8e865d5
+Author: lorisranalli <ranalli.loris@gmail.com>
+Date:   Sun May 9 11:56:07 2021 +0200
+
+    Merge del ramo dev su master e risoluzione dei conflitti
+
+commit 56944869ce6375639f919318d09bb3ea8e75c9ad
+Author: lorisranalli <ranalli.loris@gmail.com>
+Date:   Sun May 9 11:52:34 2021 +0200
+
+    Aggiunta nuova immagine. Modificata regola css
+
+diff --git a/css/style.css b/css/style.css
+index e4eabea..27eca66 100644
+--- a/css/style.css
++++ b/css/style.css
+@@ -1,4 +1,4 @@
+ .text-red
+ {
+-    color: red;
++    color: green;
+ }
+\ No newline at end of file
+diff --git a/img/punta-aderci-trabocchi-2.jpg b/img/punta-aderci-trabocchi-2.jpg
+new file mode 100644
+index 0000000..f0caed7
+Binary files /dev/null and b/img/punta-aderci-trabocchi-2.jpg differ
+diff --git "a/localit\303\240Mare.html" "b/localit\303\240Mare.html"
+index 839c8ac..f342b4b 100644
+--- "a/localit\303\240Mare.html"
++++ "b/localit\303\240Mare.html"
+@@ -9,7 +9,7 @@
+ </head>
+ <body>
+     <h2 class="text-red">Punta Aderci</h2>
+-    <img src="img/punta-aderci.jpg" alt="Località Punta Aderci" />
++    <img src="img/punta-aderci-trabocchi-2.jpg" alt="Località Punta Aderci" />
+ 
+ </body>
+ </html>
+\ No newline at end of file
+
+commit 8e865d5e19cc2e7b60a042e958b8bc4c510e6c15
+Author: lorisranalli <ranalli.loris@gmail.com>
+Date:   Sun May 9 11:08:35 2021 +0200
+
+    Aggiunta regola al css da applicare al tag h2
+
+diff --git a/css/style.css b/css/style.css
+index e4eabea..3f86a76 100644
+--- a/css/style.css
++++ b/css/style.css
+@@ -1,4 +1,9 @@
+ .text-red
+ {
+     color: red;
++}
++
++.text-center
++{
++    text-align: center;
+ }
+\ No newline at end of file
+diff --git "a/localit\303\240Mare.html" "b/localit\303\240Mare.html"
+index 839c8ac..57ab1a4 100644
+--- "a/localit\303\240Mare.html"
++++ "b/localit\303\240Mare.html"
+@@ -8,7 +8,7 @@
+     <link rel="stylesheet" href="css/style.css">
+ </head>
+ <body>
+-    <h2 class="text-red">Punta Aderci</h2>
++    <h2 class="text-red text-center">Punta Aderci</h2>
+     <img src="img/punta-aderci.jpg" alt="Località Punta Aderci" />
+ 
+ </body>
+
+commit de393e34c291b33b49c5e5b100f54af382283954
+Author: lorisranalli <ranalli.loris@gmail.com>
+Date:   Sun May 9 11:07:12 2021 +0200
+
+    Aggiunto file style.css
+
+diff --git a/css/style.css b/css/style.css
+new file mode 100644
+index 0000000..e4eabea
+--- /dev/null
++++ b/css/style.css
+@@ -0,0 +1,4 @@
++.text-red
++{
++    color: red;
++}
+\ No newline at end of file
+diff --git "a/localit\303\240Mare.html" "b/localit\303\240Mare.html"
+index 6058cef..839c8ac 100644
+--- "a/localit\303\240Mare.html"
++++ "b/localit\303\240Mare.html"
+@@ -5,8 +5,11 @@
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Punta Aderci</title>
++    <link rel="stylesheet" href="css/style.css">
+ </head>
+ <body>
+-    <h2>Punta Aderci</h2>
++    <h2 class="text-red">Punta Aderci</h2>
++    <img src="img/punta-aderci.jpg" alt="Località Punta Aderci" />
++
+ </body>
+ </html>
+\ No newline at end of file
+
+commit 30226cd19622f94ddd664a56855b1db8803b1c7c
+Author: lorisranalli <ranalli.loris@gmail.com>
+Date:   Sun May 9 11:04:31 2021 +0200
+
+    Aggiunta pagina web località di mare
+
+diff --git "a/localit\303\240Mare.html" "b/localit\303\240Mare.html"
+new file mode 100644
+index 0000000..6058cef
+--- /dev/null
++++ "b/localit\303\240Mare.html"
+@@ -0,0 +1,12 @@
++<!DOCTYPE html>
++<html lang="it">
++<head>
++    <meta charset="UTF-8">
++    <meta http-equiv="X-UA-Compatible" content="IE=edge">
++    <meta name="viewport" content="width=device-width, initial-scale=1.0">
++    <title>Punta Aderci</title>
++</head>
++<body>
++    <h2>Punta Aderci</h2>
++</body>
++</html>
+\ No newline at end of file
+
+commit 136c9f4530e33a889ded3051b81fe4cbf9958630
+Author: lorisranalli <ranalli.loris@gmail.com>
+Date:   Sun May 9 11:02:06 2021 +0200
+
+    Prima Commit
+
+diff --git a/.gitignore b/.gitignore
+new file mode 100644
+index 0000000..0190f8f
+--- /dev/null
++++ b/.gitignore
+@@ -0,0 +1 @@
++appunti.txt
+\ No newline at end of file
+diff --git a/css/desktop.ini b/css/desktop.ini
+new file mode 100644
+index 0000000..7c2d391
+--- /dev/null
++++ b/css/desktop.ini
+@@ -0,0 +1,5 @@
++[.ShellClassInfo]
++InfoTip=Questa cartella � condivisa online.
++IconFile=C:\Program Files\Google\Drive\googledrivesync.exe
++IconIndex=16
++    
+\ No newline at end of file
+diff --git a/img/desktop.ini b/img/desktop.ini
+new file mode 100644
+index 0000000..7c2d391
+--- /dev/null
++++ b/img/desktop.ini
+@@ -0,0 +1,5 @@
++[.ShellClassInfo]
++InfoTip=Questa cartella � condivisa online.
++IconFile=C:\Program Files\Google\Drive\googledrivesync.exe
++IconIndex=16
++    
+\ No newline at end of file
+diff --git a/img/punta-aderci.jpg b/img/punta-aderci.jpg
+new file mode 100644
+index 0000000..629662c
+Binary files /dev/null and b/img/punta-aderci.jpg differ
+diff --git a/index.html b/index.html
+new file mode 100644
+index 0000000..78248ce
+--- /dev/null
++++ b/index.html
+@@ -0,0 +1,15 @@
++<!DOCTYPE html>
++<html lang="en">
++<head>
++    <meta charset="UTF-8">
++    <meta http-equiv="X-UA-Compatible" content="IE=edge">
++    <meta name="viewport" content="width=device-width, initial-scale=1.0">
++    <title>Index</title>
++</head>
++<body>
++    <h1>Home Pagè Località</h1>
++    <p id="text-bold"></p>
++
++    <script src="js/script.js"></script>
++</body>
++</html>
+\ No newline at end of file
+diff --git a/js/desktop.ini b/js/desktop.ini
+new file mode 100644
+index 0000000..7c2d391
+--- /dev/null
++++ b/js/desktop.ini
+@@ -0,0 +1,5 @@
++[.ShellClassInfo]
++InfoTip=Questa cartella � condivisa online.
++IconFile=C:\Program Files\Google\Drive\googledrivesync.exe
++IconIndex=16
++    
+\ No newline at end of file
+diff --git a/js/script.js b/js/script.js
+new file mode 100644
+index 0000000..409d82b
+--- /dev/null
++++ b/js/script.js
+@@ -0,0 +1,2 @@
++var el=document.getElementById("text-bold");
++el.innerHTML="Questo sito è stato creato durante il compito di Tecnologie Informatiche"
+\ No newline at end of file

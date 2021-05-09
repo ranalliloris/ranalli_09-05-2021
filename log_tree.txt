@@ -1,0 +1,8 @@
+*   de619fa (HEAD -> master, origin/master) Merge del ramo dev su master e risoluzione dei conflitti
+|\  
+| * 8e865d5 (origin/dev, dev) Aggiunta regola al css da applicare al tag h2
+* | 5694486 Aggiunta nuova immagine. Modificata regola css
+|/  
+* de393e3 Aggiunto file style.css
+* 30226cd Aggiunta pagina web località di mare
+* 136c9f4 Prima Commit
